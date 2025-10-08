@@ -20,6 +20,7 @@ pipeline {
 
 			}
 
+		}
 
 		stage ('Deliver') {
 				steps {
@@ -31,8 +32,6 @@ pipeline {
 						archiveArtifacts 'dist/add2vals'
 					}
 				}
-		}
-		
 		}
 	}
 }
